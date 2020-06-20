@@ -67,32 +67,31 @@
 
         let btn = document.getElementById("btn");
 
-
-
-
         bnt.addEventListener("click", function () {
             let weight = document.getElementById("w-input").value;
             let height = document.getElementById("h-input").value;
             let result = (weight / (height * height)) * 10000;
             document.getElementById("BMI-output").value = result;
             let bloc = document.getElementById("BMI-output");
+            
+            // clear the current input class
+            bloc.className = "";
+
             if (result <= 18.49) {
-                return bloc.classList.add("sub");
-            } else if (result === 18.50 || result < 25) {
-                return bloc.classList.add("ok");
-            } else if (result === 25 && result < 30) {
-                return bloc.classList.add("sup");
-            } else if (result === 30 && result < 35) {
-                return bloc.classList.add("obzi");
-            } else if (result === 35 && result < 40) {
-                return bloc.classList.add("obzit");
-            } else(result >= 40)
-            return bloc.classList.add("obzita");
-            const listaClase = ["subp", "norm", "obez1", "obez2", "obezm"];
-            for (clasa of listaClase) {
-                bloc.classList.remove(clasa);
+               bloc.classList.add("sub");
+            } else if (result < 25) {
+                bloc.classList.add("ok");
+            } else if (result < 30) {
+                bloc.classList.add("sup");
+            } else if (result < 35) {
+                bloc.classList.add("obzi");
+            } else if (result < 40) {
+                bloc.classList.add("obzit");
+            } else {
+                bloc.classList.add("obzita");
             }
 
+            return bloc.classList;
         });
     </script>
 </body>
