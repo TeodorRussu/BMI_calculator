@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <h2>BMI calculator</h2>
+        <label for="h-input" id="height">Height</label>
+        <p id="le">Centimetres</p>
+        <input type="text" id="h-input" />
+        <label for="w-input" id="weight">Weight</label>
+        <p id="li">Kg</p>
+        <input type="text" id="w-input" />
+        <hr />
+        <button id="bnt">Calculate</button>
+        <label for="BMI-output" id="BMIlabel">Result:</label>
+        <input type="text" id="BMI-output" readonly="readonly" />
+    </div>
+    <br>
+    <div id="table">
+        <table>
+            <tr id="first">
+                <th>Indicele de masa corporala</th>
+                <th>Interpretare rezultat</th>
+                <th>Risc de boala</th>
+            </tr>
+            <tr id="sec">
+                <td>18,49 sau mai putin</td>
+                <td>Subponderal</td>
+                <td>✓</td>
+            </tr>
+            <tr id="tre">
+                <td>intre 18,50 si 24,99</td>
+                <td>Greutate normala</td>
+                <td>Fara risc de boala</td>
+            </tr>
+            <tr id="patr">
+                <td>intre 25,00 si 29,99</td>
+                <td>Supraponderal</td>
+                <td>✓</td>
+            </tr>
+            <tr id="cin">
+                <td>intre 30,00 si 34,99</td>
+                <td>Obezitate(gradul I)</td>
+                <td>✓</td>
+            </tr>
+            <tr id="sas">
+                <td>intre 35,00 si 39,99</td>
+                <td>Obezitate(gradul II)</td>
+                <td>✓</td>
+            </tr>
+            <tr id="sap">
+                <td>intre 40,00 sau mai mult</td>
+                <td>Obezitate morbida</td>
+                <td>✓</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        "use strict"
+
+        let btn = document.getElementById("btn");
+
+
+
+
+        bnt.addEventListener("click", function () {
+            let weight = document.getElementById("w-input").value;
+            let height = document.getElementById("h-input").value;
+            let result = (weight / (height * height)) * 10000;
+            document.getElementById("BMI-output").value = result;
+            let bloc = document.getElementById("BMI-output");
+            if (result <= 18.49) {
+                return bloc.classList.add("sub");
+            } else if (result === 18.50 || result < 25) {
+                return bloc.classList.add("ok");
+            } else if (result === 25 && result < 30) {
+                return bloc.classList.add("sup");
+            } else if (result === 30 && result < 35) {
+                return bloc.classList.add("obzi");
+            } else if (result === 35 && result < 40) {
+                return bloc.classList.add("obzit");
+            } else(result >= 40)
+            return bloc.classList.add("obzita");
+            const listaClase = ["subp", "norm", "obez1", "obez2", "obezm"];
+            for (clasa of listaClase) {
+                bloc.classList.remove(clasa);
+            }
+
+        });
+    </script>
+</body>
+
+</html>

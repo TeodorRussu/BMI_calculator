@@ -1,0 +1,229 @@
+* {
+    font-family: arial, sans-serif;
+    margin: 10;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 85vh;
+}
+
+h2 {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #035aa6;
+    color: white;
+    text-align: center;
+
+}
+
+hr {
+    border: solid lightgrey 2px;
+    border-bottom: none;
+    width: 90%;
+    margin: 150px auto;
+
+}
+
+table {
+    border-spacing: 0px;
+    width: 550px;
+    height: 300px;
+
+}
+
+th,
+td {
+    border: solid 1px #c2f0fc;
+    padding-left: 5px;
+
+}
+
+#first {
+    color: #084177;
+    background-color: #e1f2fb;
+}
+
+#sec {
+    color: #fb7813;
+
+
+}
+
+#tre {
+    background-color: #7cbd1e;
+    color: #084177;
+}
+
+#patr {
+    background-color: #f9c49a;
+    color: #fb7813;
+}
+
+#cin {
+    background-color: #ff9a76;
+    color: white;
+}
+
+#sas {
+    background-color: #ff5200;
+    color: white;
+}
+
+#sap {
+    background-color: #d92027;
+    color: white;
+}
+
+#container {
+    height: 300px;
+    width: 550px;
+    margin-left: 10px;
+    border: 3px solid #035aa6;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+
+#height {
+    position: absolute;
+    font-weight: bold;
+    left: 20px;
+    top: 60px;
+    font-size: 1.5rem;
+    color: #474a56;
+}
+
+#le {
+    width: 25%;
+    float: left;
+    margin-top: 40px;
+    padding: 15px;
+    padding-left: 5px;
+    margin-left: 15px;
+    color: grey;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#h-input {
+    position: absolute;
+    font-weight: bold;
+    left: 20px;
+    top: 130px;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: solid grey;
+    border-style: inset #f0f0f0;
+
+}
+
+#weight {
+    position: absolute;
+    font-weight: bold;
+    left: 390px;
+    top: 60px;
+    font-size: 1.5rem;
+    color: #474a56;
+}
+
+#li {
+    width: 25%;
+    float: right;
+    margin-top: 40px;
+    padding: 15px;
+    margin-right: 0px;
+    color: grey;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#w-input {
+    position: absolute;
+    font-weight: bold;
+    left: 390px;
+    top: 130px;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: solid grey;
+}
+
+#bnt {
+    position: absolute;
+    top: 220px;
+    bottom: auto;
+    left: 20px;
+    width: 130px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #06623b;
+    color: white;
+    font-size: large;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+#BMIlabel {
+    position: absolute;
+    font-weight: bold;
+    left: 320px;
+    top: 240px;
+    width: 120px;
+    height: 40px;
+    color: #474a56;
+}
+
+#BMI-output {
+    position: absolute;
+    font-weight: bold;
+    left: 390px;
+    top: 220px;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    border: solid grey;
+}
+
+#table {
+    width: 450px;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.sub {
+    color: #fb7813;
+}
+
+.ok {
+    background-color: #7cbd1e;
+    color: #084177;
+}
+
+.sup {
+    background-color: #f9c49a;
+    color: #fb7813;
+}
+
+.obzi {
+    background-color: #ff9a76;
+    color: white;
+}
+
+.obzit {
+    background-color: #ff5200;
+    color: white;
+}
+
+.obzita {
+    background-color: #d92027;
+    color: white;
+}
